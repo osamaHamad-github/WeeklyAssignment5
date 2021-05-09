@@ -1,0 +1,41 @@
+.page-section {
+  float: left;
+  margin: 10px;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-name {
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid;
+}
+
+.drop-down {
+  background-color: lightgrey;
+  display: none;
+  text-align: center;
+  position: absolute;
+  padding: 5px;
+  border: 2px solid;
+  width: 100px;
+}
+
+.drop-down a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-down a:hover { background-color: #ddd; }
+
+.menu:hover .drop-down { display: block; }
+
+.menu:hover .menu-name { background-color: #3e8e41; }
+
+#circumference-section { display: none; }
