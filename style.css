@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f3ee
+  background-color: #f4f3ee;
 }
 
 .page-section {
@@ -51,14 +51,14 @@ body {
 
 #header {
   font-family: Arial, Helvetica, sans-serif;
-  color: #463f3a
+  color: #463f3a;
 }
 
 .result {
   font-family: Arial, Helvetica, sans-serif;
   color: #463f3a;
   font-size: 26px;
-  width: 300px
+  width: 300px;
 }
 
 #area,

@@ -6,13 +6,13 @@ document.getElementById('calculate-area').addEventListener('click', calculateAre
 
 document.getElementById('calculate-circumference').addEventListener('click', calculateCircumference)
 
-document.getElementById('area-input').addEventListener('focus', radiusBlueA);
+document.getElementById('area-input').addEventListener('focus', radiusBlueA)
 
-document.getElementById('area-input').addEventListener('blur', radiusGreyA);
+document.getElementById('area-input').addEventListener('blur', radiusGreyA)
 
-document.getElementById('circumference-input').addEventListener('focus', radiusBlueC);
+document.getElementById('circumference-input').addEventListener('focus', radiusBlueC)
 
-document.getElementById('circumference-input').addEventListener('blur', radiusGreyC);
+document.getElementById('circumference-input').addEventListener('blur', radiusGreyC)
 
 // this is for the area page
 // converts the circle's radius to blue when the radius input is selected
@@ -20,7 +20,7 @@ function radiusBlueA () {
   document.getElementById('circle-1').src = '/images/circle-focus.png'
 }
 
-// converts the radius color back to original 
+// converts the radius color back to original
 function radiusGreyA () {
   document.getElementById('circle-1').src = '/images/circle.png'
 }
@@ -31,7 +31,7 @@ function radiusBlueC () {
   document.getElementById('circle-2').src = '/images/circle-focus.png'
 }
 
-// converts the radius color back to original 
+// converts the radius color back to original
 function radiusGreyC () {
   document.getElementById('circle-2').src = '/images/circle.png'
 }
@@ -64,14 +64,10 @@ function calculateArea () {
   if (isNaN(radius)) {
     // this detects values that are Not a Number
     document.getElementById('area').innerText = `Value Error: '${radius}' is not a number`
-    return 0
-
-  } else if (radius === '') {
+    return 0} else if (radius === '') {
     // this detects blank variables
     document.getElementById('area').innerText = 'Value Error: all variables must be filled'
-    return 0
-
-  } else if (radius <= 0) {
+    return 0} else if (radius <= 0) {
     // this detects values equal to zero or any negative number
     document.getElementById('area').innerText = `Math Error: cannot have value less than or equal to 0 (${radius})`
     return 0
@@ -104,14 +100,10 @@ function calculateCircumference () {
   if (isNaN(radius)) {
     // this detects values that are Not a Number
     document.getElementById('circumference').innerText = `Value Error: '${radius}' is not a number`
-    return 0
-
-  } else if (radius === '') {
+    return 0} else if (radius === '') {
     // this detects blank variables
     document.getElementById('circumference').innerText = 'Value Error: all variables must be filled'
-    return 0
-
-  } else if (radius <= 0) {
+    return 0} else if (radius <= 0) {
     // this detects values equal to zero or any negative number
     document.getElementById('circumference').innerText = `Math Error: cannot have value less than or equal to 0 (${radius})`
     return 0
