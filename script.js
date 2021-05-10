@@ -1,8 +1,40 @@
 document.getElementById('circumference-calculator').addEventListener('click', toCircumference)
+
 document.getElementById('area-calculator').addEventListener('click', toArea)
+
 document.getElementById('calculate-area').addEventListener('click', calculateArea)
+
 document.getElementById('calculate-circumference').addEventListener('click', calculateCircumference)
-document.getElementById('area-input').addEventListener('focus', changeCircle)
+
+document.getElementById('area-input').addEventListener('focus', radiusBlueA);
+
+document.getElementById('area-input').addEventListener('blur', radiusGreyA);
+
+document.getElementById('circumference-input').addEventListener('focus', radiusBlueC);
+
+document.getElementById('circumference-input').addEventListener('blur', radiusGreyC);
+
+// this is for the area page
+// converts the circle's radius to blue when the radius input is selected
+function radiusBlueA () {
+  document.getElementById('circle-1').src = '/images/circle-focus.png'
+}
+
+// converts the radius color back to original 
+function radiusGreyA () {
+  document.getElementById('circle-1').src = '/images/circle.png'
+}
+
+// this is for the circumference page
+// converts the circle's radius to blue when the radius input is selected
+function radiusBlueC () {
+  document.getElementById('circle-2').src = '/images/circle-focus.png'
+}
+
+// converts the radius color back to original 
+function radiusGreyC () {
+  document.getElementById('circle-2').src = '/images/circle.png'
+}
 
 // switches to the circumference calculator
 function toCircumference () {
@@ -96,8 +128,4 @@ function calculateCircumference () {
 
   // prints the area calculated to the html
   document.getElementById('circumference').innerText = circumference
-}
-
-function changeCircle () {
-  document.getElementById('circle-image').src = '/images/circle-focus.png'
 }
