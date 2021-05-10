@@ -7,38 +7,42 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Circle Area and Circumference</h1>
+    <h1 id="header">Circle Area and Circumference</h1>
     <div id="area-section">
       <div class="page-section">
         <div class="menu">
-          <h2 class="menu-name">Area</h2>
+          <h2 class="menu-name-area">Area &#9662;</h2>
           <div class="drop-down">
             <a id="circumference-calculator" href="#">Circumference</a>
           </div>
+          <br>
+          <br>
         </div>
         <br>
-        <p>Radius (r): <input id="area-input" type="text"></p>
+        <p class="radius">Radius (r): <input id="area-input" type="text"></p>
         <button id="calculate-area">Calculate</button>
-        <p>Area = <span id="area"></span></p>
+        <p class="result">Area = <span id="area"></span></p>
       </div>
       <div class="page-section">
         <img src="/images/area.png" alt="area_formula">
         <br>
-        <img src="/images/circle.png" alt="circle_image">
+        <img id="cirlce-image" src="/images/circle.png" alt="circle_image">
       </div>
     </div>
     <div id="circumference-section">
       <div class="page-section">
         <div class="menu">
-          <h2 class="menu-name">Circumference</h2>
+          <h2 class="menu-name-circumference">Circumference &#9662;</h2>
           <div class="drop-down">
             <a id="area-calculator" href="#">Area</a>
           </div>
+          <br>
+          <br>
         </div>
         <br>
-        <p>Radius (r): <input id="circumference-input" type="text"></p>
+        <p class="radius">Radius (r): <input id="circumference-input" type="text"></p>
         <button id="calculate-circumference">Calculate</button>
-        <p>Circumference = <span id="circumference"></span></p>
+        <p class="result">Circumference = <span id="circumference"></span></p>
       </div>
       <div class="page-section">
         <img src="/images/circumference.png" alt="area_formula">

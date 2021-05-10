@@ -2,6 +2,7 @@ document.getElementById('circumference-calculator').addEventListener('click', to
 document.getElementById('area-calculator').addEventListener('click', toArea)
 document.getElementById('calculate-area').addEventListener('click', calculateArea)
 document.getElementById('calculate-circumference').addEventListener('click', calculateCircumference)
+document.getElementById('area-input').addEventListener('focus', changeCircle)
 
 // switches to the circumference calculator
 function toCircumference () {
@@ -95,4 +96,8 @@ function calculateCircumference () {
 
   // prints the area calculated to the html
   document.getElementById('circumference').innerText = circumference
+}
+
+function changeCircle () {
+  document.getElementById('circle-image').src = '/images/circle-focus.png'
 }
