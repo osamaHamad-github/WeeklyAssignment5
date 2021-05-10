@@ -64,10 +64,12 @@ function calculateArea () {
   if (isNaN(radius)) {
     // this detects values that are Not a Number
     document.getElementById('area').innerText = `Value Error: '${radius}' is not a number`
-    return 0} else if (radius === '') {
+    return 0 
+  } else if (radius === '') {
     // this detects blank variables
     document.getElementById('area').innerText = 'Value Error: all variables must be filled'
-    return 0} else if (radius <= 0) {
+    return 0 
+  } else if (radius <= 0) {
     // this detects values equal to zero or any negative number
     document.getElementById('area').innerText = `Math Error: cannot have value less than or equal to 0 (${radius})`
     return 0
@@ -98,15 +100,17 @@ function calculateCircumference () {
   // parsing through our inputs to check for forbidden inputs
   // strings, null, numbers less than or equal to zero are forbidden
   if (isNaN(radius)) {
-    // this detects values that are Not a Number
-    document.getElementById('circumference').innerText = `Value Error: '${radius}' is not a number`
-    return 0} else if (radius === '') {
-    // this detects blank variables
-    document.getElementById('circumference').innerText = 'Value Error: all variables must be filled'
-    return 0} else if (radius <= 0) {
-    // this detects values equal to zero or any negative number
-    document.getElementById('circumference').innerText = `Math Error: cannot have value less than or equal to 0 (${radius})`
-    return 0
+      // this detects values that are Not a Number
+      document.getElementById('circumference').innerText = `Value Error: '${radius}' is not a number`
+      return 0 
+    } else if (radius === '') {
+      // this detects blank variables
+      document.getElementById('circumference').innerText = 'Value Error: all variables must be filled'
+      return 0 
+    } else if (radius <= 0) {
+      // this detects values equal to zero or any negative number
+      document.getElementById('circumference').innerText = `Math Error: cannot have value less than or equal to 0 (${radius})`
+      return 0
   }
 
   // parsing radius from string to float
